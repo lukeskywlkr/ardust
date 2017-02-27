@@ -4,7 +4,9 @@
   "description": "A control panel for Arduino PM2.5 detector",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/webpack",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,27 @@
   "bugs": {
     "url": "https://github.com/lukeskywlkr/ardust/issues"
   },
-  "homepage": "https://github.com/lukeskywlkr/ardust#readme"
+  "homepage": "https://github.com/lukeskywlkr/ardust#readme",
+  "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "material-ui": "^0.17.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.2",
+    "electron-packager": "^8.5.2",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^2.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
 }
